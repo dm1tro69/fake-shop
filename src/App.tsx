@@ -13,7 +13,6 @@ const App: FC = () => {
       <Routes>
         <Route path={'/'} element={<ProductListing/>}/>
         <Route path={'product/:id'} element={<ProductDetail/>}/>
-          {/*</Route>*/}
       </Routes>
     </div>
       </BrowserRouter>

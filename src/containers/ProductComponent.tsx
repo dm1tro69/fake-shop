@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {useTypeSelector} from "../redux/types";
 import {Link} from "react-router-dom";
 
-const ProductComponent = () => {
+const ProductComponent:FC = () => {
     const products = useTypeSelector(state => state.allProducts.products)
     const renderList = products.map((product) => (
         <div key={product.id} className={'four wide column'}>

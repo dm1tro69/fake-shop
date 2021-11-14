@@ -13,7 +13,12 @@ export type ActionTypeSet = {
     payload: any
 }
 
-export type Actions = ActionTypeSelected | ActionTypeSet
+export type ActionTypeRemove = {
+    type: typeof ActionTypes.REMOVE_SELECTED_PRODUCT
+
+}
+
+export type Actions = ActionTypeSelected | ActionTypeSet | ActionTypeRemove
 
 
 

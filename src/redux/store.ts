@@ -1,10 +1,11 @@
 import {applyMiddleware, combineReducers, createStore} from "redux";
-import {productReducer} from "./reducers/productReducer";
+import {productsReducer, selectedReducer} from "./reducers/productsReducer";
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 
 export const rootReducer = combineReducers({
-    allProducts: productReducer
+    allProducts: productsReducer,
+    selected: selectedReducer
 })
 
 export type RootType = ReturnType<typeof rootReducer>
